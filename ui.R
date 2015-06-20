@@ -16,8 +16,8 @@ fluidPage(
     p("* Facets (or grids) can be also selected from the list, default plot has no facets"),
     p("* Additional features can be added to the plot by clicking on the checkboxes"),
     br(),
-    selectInput('x', 'X', names(dataset)[c(1,2)]),
-    selectInput('y', 'Y', names(dataset), names(dataset)),
+    selectInput('x', 'X', names(dataset),"wt"),
+    selectInput('y', 'Y', names(dataset),"mpg"),
     selectInput('color', 'Color', c('None', names(dataset))),
     
     selectInput('facet_row', 'Facet Row', c(None='.', names(dataset)[c(2,8,9,10,11)])),
